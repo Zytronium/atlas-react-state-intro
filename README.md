@@ -25,7 +25,7 @@
 
 ### ✅ Tasks checklist:
 - [X] ​0. Getting Started (0/0 pts)
-- [ ] ​1. Fetch Data with API (0/10 pts)
+- [X] ​1. Fetch Data with API (10/10 pts)
 - [ ] ​2. Filtering (0/20 pts)
 - [ ] ​3. Sorting (0/20 pts)
 - [ ] ​4. Pagination (0/20 pts)
@@ -33,7 +33,7 @@
 - [ ] ​6. Deploy Application (0/10 pts)
 
 
-- [ ] **Everything Done ✓** (0/100 pts) - 0%
+- [ ] **Everything Done ✓** (10/100 pts) - 10%
 
 I got started on this porject a little late, so my pacing is extremely rushed.
 
