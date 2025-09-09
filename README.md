@@ -12,12 +12,14 @@
 - `src`: All javascript/jsx code goes in this directory
 - `src/assets`: Any static assets such as images that are loaded through the javascript files goes here.
 - `src/app.jsx`: The is the main app component for the entire app.
+- `test_server.js`: This is an Express server that runs the website built to `dist` so you can test the built version without deploying to production, since some things do work differently. 
 
 ### Important Commands
 
 - `npm run dev`: Starts dev server with Hot Module Reloading on port 5173. Anytime a file changes, the changes will automatocally be reflected in the browser
 - `npm run lint`: Run the lint checker with eslint to check for known linting issues
 - `npm run format`: Run prettier to automatically reformat files
+- `npm run test-dist`: Build and run the distributable website to preview the final build before deploying to production
 
 ---
 
