@@ -1,6 +1,9 @@
 import express from 'express';
+import dotenv from 'dotenv'
 
-const PORT = 3000;
+dotenv.config( {quiet: true} );
+
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.static('dist'));

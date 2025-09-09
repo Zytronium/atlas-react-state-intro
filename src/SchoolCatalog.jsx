@@ -12,10 +12,9 @@ export default function SchoolCatalog() {
 
   const filteredCourses = courses.filter((course) => {
     const query = searchQuery.trim().toLowerCase();
-    if (!query) {
-      console.log("No query found");
+    if (!query)
       return true; // Show all courses
-      }
+
     const num = (course.courseNumber || "").toLowerCase();
     const name = (course.courseName || "").toLowerCase();
     return num.includes(query) || name.includes(query);
