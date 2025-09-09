@@ -4,6 +4,9 @@ export default function SchoolCatalog() {
   const [courses, setCourses] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [dataSort, setDataSort] = useState({ sortBy: 'trimester', ascending: true });
+  const [page, setPage] = useState(1);
+
+  const PAGE_SIZE = 5;
 
   useEffect(() => {
     fetch("/api/courses.json")
@@ -32,6 +35,11 @@ export default function SchoolCatalog() {
     return 0;
   });
 
+  const currentPage = sortedCourses.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
+  const hasLess = page > 1;
+  const hasMore = filteredCourses.length > page * PAGE_SIZE;
+
   function sort(column) {
     setDataSort(prev => {
       // If already sorting by this column, toggle sort order (true = ascending, false = descending)
@@ -59,7 +67,7 @@ export default function SchoolCatalog() {
           </tr>
         </thead>
         <tbody>
-        {Array.isArray(sortedCourses) && sortedCourses.map((course, i) => (
+        {Array.isArray(currentPage) && currentPage.map((course, i) => (
           <tr key={course.courseNumber}>
             <td>{course.trimester}</td>
             <td>{course.courseNumber}</td>
@@ -74,8 +82,8 @@ export default function SchoolCatalog() {
         </tbody>
       </table>
       <div className="pagination">
-        <button>Previous</button>
-        <button>Next</button>
+        <button disabled={!hasLess} onClick={() => setPage(page - 1)}>Previous</button>
+        <button disabled={!hasMore} onClick={() => setPage(page + 1)}>Next</button>
       </div>
     </div>
   );
