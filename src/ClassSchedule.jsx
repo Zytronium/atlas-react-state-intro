@@ -1,4 +1,7 @@
+import { useContext } from "react";
+
 export default function ClassSchedule() {
+  const { enrolledClasses } = useContext(AppContext); // <-- how do I use this AppContext if its not defined in this file? Do I need to import it?
   return (
     <div className="class-schedule">
       <h1>Class Schedule</h1>

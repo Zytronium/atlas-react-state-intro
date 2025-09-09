@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { AppContext } from "./App.jsx";
 
 export default function SchoolCatalog() {
   const [courses, setCourses] = useState([]);
@@ -75,7 +76,7 @@ export default function SchoolCatalog() {
             <td>{course.semesterCredits}</td>
             <td>{course.totalClockHours}</td>
             <td>
-              <button>Enroll</button>
+              <button onClick={enrolledClasses.append(course)}>Enroll</button>
             </td>
           </tr>
         ))}
