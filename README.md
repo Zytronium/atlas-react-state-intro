@@ -27,13 +27,13 @@
 - [X] ​0. Getting Started (0/0 pts)
 - [X] ​1. Fetch Data with API (10/10 pts)
 - [X] ​2. Filtering (20/20 pts)
-- [ ] ​3. Sorting (0/20 pts)
+- [X] ​3. Sorting (20/20 pts)
 - [ ] ​4. Pagination (0/20 pts)
 - [ ] ​5. Enroll/Drop Course (0/20 pts)
 - [ ] ​6. Deploy Application (0/10 pts)
 
 
-- [ ] **Everything Done ✓** (30/100 pts) - 30%
+- [ ] **Everything Done ✓** (50/100 pts) - 50%
 
 I got started on this porject a little late, so my pacing is extremely rushed.
 
