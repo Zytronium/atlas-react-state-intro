@@ -18,3 +18,25 @@
 - `npm run dev`: Starts dev server with Hot Module Reloading on port 5173. Anytime a file changes, the changes will automatocally be reflected in the browser
 - `npm run lint`: Run the lint checker with eslint to check for known linting issues
 - `npm run format`: Run prettier to automatically reformat files
+
+---
+
+### ✅ Tasks checklist:
+- [X] ​0. Getting Started (0/0 pts)
+- [ ] ​1. Fetch Data with API (0/10 pts)
+- [ ] ​2. Filtering (0/20 pts)
+- [ ] ​3. Sorting (0/20 pts)
+- [ ] ​4. Pagination (0/20 pts)
+- [ ] ​5. Enroll/Drop Course (0/20 pts)
+- [ ] ​6. Deploy Application (0/10 pts)
+
+
+- [ ] **Everything Done ✓** (0/100 pts) - 0%
+
+I got started on this porject a little late, so my pacing is extremely rushed.
+
+>### Progress Goals:
+><strong>Tuesday: 70% (task 4)</strong>  
+<em style="color: gray">Wednesday: 100% (task 6)</em>
+
+---
