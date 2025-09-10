@@ -10,8 +10,8 @@
 
 - `index.html`: This is the html file that appears when the dev server starts up.
 - `src`: All javascript/jsx code goes in this directory
-- `src/assets`: Any static assets such as images that are loaded through the javascript files goes here.
-- `src/app.jsx`: The is the main app component for the entire app.
+- `src/assets`: Any static assets such as images that are loaded through the javascript files go here.
+- `src/app.jsx`: This is the main app component for the entire app.
 - `test_server.js`: This is an Express server that runs the website built to `dist` so you can test the built version without deploying to production, since some things do work differently. 
 
 ### Important Commands
@@ -30,15 +30,15 @@
 - [X] ​3. Sorting (20/20 pts)
 - [X] ​4. Pagination (20/20 pts)
 - [X] ​5. Enroll/Drop Course (20/20 pts)
-- [ ] ​6. Deploy Application (0/10 pts)
+- [X] ​6. Deploy Application (10/10 pts)
 
 
-- [ ] **Everything Done ✓** (90/100 pts) - 90%
+- [X] **Everything Done ✓** (100/100 pts) - 100%
 
 I got started on this project a little late, so my pacing is extremely rushed.
 
 >### Progress Goals:
-><strong>Tuesday: 70 ✓% (task 4)</strong>  
-<<strong>>Wednesday: 100% (task 6)</<strong>>
+><strong>Tuesday: 70% ✓(task 4)</strong>  
+<<strong>>Wednesday: 100% ✓(task 6)</<strong>>
 
 ---

@@ -44,6 +44,7 @@ export default function SchoolCatalog() {
   const hasMore = filteredCourses.length > page * PAGE_SIZE;
 
   function sort(column) {
+    setPage(1);
     setDataSort(prev => {
       // If already sorting by this column, toggle sort order (true = ascending, false = descending)
       if (prev.sortBy === column) {
@@ -57,7 +58,10 @@ export default function SchoolCatalog() {
   return (
     <div className="school-catalog">
       <h1>School Catalog</h1>
-      <input type="text" placeholder="Search" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+      <input type="text" placeholder="Search" value={searchQuery} onChange={(e) => {
+        setSearchQuery(e.target.value);
+        setPage(1);
+      }} />
       <table>
         <thead>
           <tr>
