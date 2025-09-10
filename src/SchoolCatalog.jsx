@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { AppContext } from "./App.jsx";
 
 export default function SchoolCatalog() {
+  const { enrollCourse } = useContext(AppContext);
+
   const [courses, setCourses] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [dataSort, setDataSort] = useState({ sortBy: 'trimester', ascending: true });
@@ -68,7 +70,7 @@ export default function SchoolCatalog() {
           </tr>
         </thead>
         <tbody>
-        {Array.isArray(currentPage) && currentPage.map((course, i) => (
+        {Array.isArray(currentPage) && currentPage.map((course) => (
           <tr key={course.courseNumber}>
             <td>{course.trimester}</td>
             <td>{course.courseNumber}</td>
@@ -76,7 +78,7 @@ export default function SchoolCatalog() {
             <td>{course.semesterCredits}</td>
             <td>{course.totalClockHours}</td>
             <td>
-              <button onClick={enrolledClasses.append(course)}>Enroll</button>
+              <button onClick={() => enrollCourse(course)}>Enroll</button>
             </td>
           </tr>
         ))}

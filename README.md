@@ -16,7 +16,7 @@
 
 ### Important Commands
 
-- `npm run dev`: Starts dev server with Hot Module Reloading on port 5173. Anytime a file changes, the changes will automatocally be reflected in the browser
+- `npm run dev`: Starts dev server with Hot Module Reloading on port 5173. Anytime a file changes, the changes will automatically be reflected in the browser
 - `npm run lint`: Run the lint checker with eslint to check for known linting issues
 - `npm run format`: Run prettier to automatically reformat files
 - `npm run test-dist`: Build and run the distributable website to preview the final build before deploying to production
@@ -29,16 +29,16 @@
 - [X] ​2. Filtering (20/20 pts)
 - [X] ​3. Sorting (20/20 pts)
 - [X] ​4. Pagination (20/20 pts)
-- [ ] ​5. Enroll/Drop Course (0/20 pts)
+- [X] ​5. Enroll/Drop Course (20/20 pts)
 - [ ] ​6. Deploy Application (0/10 pts)
 
 
-- [ ] **Everything Done ✓** (70/100 pts) - 70%
+- [ ] **Everything Done ✓** (90/100 pts) - 90%
 
-I got started on this porject a little late, so my pacing is extremely rushed.
+I got started on this project a little late, so my pacing is extremely rushed.
 
 >### Progress Goals:
 ><strong>Tuesday: 70 ✓% (task 4)</strong>  
-<em style="color: gray">Wednesday: 100% (task 6)</em>
+<<strong>>Wednesday: 100% (task 6)</<strong>>
 
 ---
