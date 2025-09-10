@@ -39,6 +39,6 @@ I got started on this project a little late, so my pacing is extremely rushed.
 
 >### Progress Goals:
 ><strong>Tuesday: 70% ✓(task 4)</strong>  
-<<strong>>Wednesday: 100% ✓(task 6)</<strong>>
+<strong>Wednesday: 100% ✓(task 6)</strong>
 
 ---
